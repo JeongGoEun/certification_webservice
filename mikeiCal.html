@@ -1,0 +1,155 @@
+<HTML>
+<HEAD>
+<TITLE>Calendar</TITLE>
+<meta http-equiv="Content-type" content="text/html; charset=euc-kr">
+<style>
+<!-- 자동으로 테이블 등의 글자 크기와 종류 지정 -->
+table,tr,td,select,input,div,form, { text-decoration:none; color:black; font-size:10pt; font-family:굴림;}
+<!-- 링크관련 스타일 -->
+:link {TEXT-DECORATION: none}
+:visited {TEXT-DECORATION: none}
+:hover {TEXT-DECORATION: none}
+</style>
+
+<script src="calendar.js"></script>
+</HEAD>
+<BODY>
+<table border="1" cellspacing="0" cellpadding="10" width="100%">
+  <tr> 
+    <td width="36%" align="center" valign="middle"> 
+      <script>
+// 기본 달력
+c = new Calendar('c', 'frm');
+c.show();
+</script>
+    </td>
+    <td width="64%" valign="top"> 
+      <p>===&gt; 달력의 기본 모양임다. 만드는 방법은 아래와 같슴다. </p>
+      <p>우선 html의 &lt;head&gt; ~ &lt;/head&gt; 부분을 다음과 같이 작성합니다.</p>
+      <p><font color="#0000FF">&lt;HEAD&gt;<br>
+        &lt;TITLE&gt;Calendar&lt;/TITLE&gt;<br>
+        &lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html; 
+        charset=euc-kr&quot;&gt;<br>
+        &lt;style&gt;<br>
+        &lt;!-- 자동으로 테이블 등의 글자 크기와 종류 지정 --&gt;<br>
+        table,tr,td,select,input,div,form, { text-decoration:none; color:black; 
+        font-size:10pt; font-family:굴림;}<br>
+        &lt;!-- 링크관련 스타일 --&gt;<br>
+        :link {TEXT-DECORATION: none}<br>
+        :visited {TEXT-DECORATION: none}<br>
+        :hover {TEXT-DECORATION: none}<br>
+        &lt;/style&gt;<br>
+        <br>
+        &lt;script src=&quot;calendar.js&quot;&gt;&lt;/script&gt;<br>
+        &lt;/HEAD&gt;</font></p>
+      <p>그리고 나서 달력을 html에 아래와 같이 추가합니다.</p>
+      <p> <font color="#0000FF">&lt;script&gt;<br>
+        </font><font color="#0000FF">c = new Calendar('c', 'frm');<br>
+        c.show();<br>
+        &lt;/script&gt;</font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td width="36%" align="center" valign="middle"> 
+      <script>
+cal2 = new Calendar('cal2', 'frm2', '2002', '05', '07', 'yyyy-mm-dd', 3);
+cal2.show();
+</script>
+    </td>
+    <td width="64%" valign="top"> 
+      <p>===&gt; 위의 달력을 변형해 봄니다. 아래와 같이 Calendar 객체의 인수로 날짜와 format, 요일 표시를 지정할 
+        수 있습니다. </p>
+      <p> <font color="#0000FF">&lt;script&gt;<br>
+        cal2 = new Calendar('cal2', 'frm2', '2002', '05', '07', 'yyyy-mm-dd', 
+        3);<br>
+        cal2.show();<br>
+        &lt;/script&gt;</font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td width="36%" align="center" valign="middle"> 
+      <script>
+// 달력에 옵션 주기
+cal3 = new Calendar('cal3', 'frm3');
+cal3.tfDate = 'dateField';
+cal3.bgcolor = '#D1EBF3';
+cal3.bgcolor2 = '#E9F8FC';
+cal3.linecolor = '#D1EBF3';
+cal3.lineheight = '20px';
+cal3.width = '300';
+cal3.tfDateLineCol = 'green';
+cal3.tfCol = '#E9F8FC';
+cal3.focusCol = 'yellow';
+cal3.show();
+</script>
+    </td>
+    <td width="64%" valign="top"> 
+      <p>===&gt; 또는 아래와 같이 달력의 옵션을 수정할 수도 있습니다. </p>
+      <p> <font color="#0000FF">&lt;script&gt;<br>
+        cal3 = new Calendar('cal3', 'frm3');<br>
+        cal3.tfDate = 'dateField';<br>
+        cal3.bgcolor = '#D1EBF3'; // 요일 배경색<br>
+        cal3.bgcolor2 = '#E9F8FC'; // 내용 배경색<br>
+        cal3.linecolor = '#D1EBF3'; // 라인 배경색<br>
+        cal3.lineheight = '20px'; // 라인 높이<br>
+        cal3.width = '300'; // 달력 너비<br>
+        cal3.tfDateLineCol = 'green'; // 텍스트필드 라인색<br>
+        cal3.tfCol = '#E9F8FC'; // 내용 텍스트필드 배경색<br>
+        cal3.focusCol = 'yellow'; // 포커스 색<br>
+        cal3.show();<br>
+        &lt;/script&gt;</font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td width="36%" align="center" valign="middle">
+<script>
+// 달력 보여주기
+cal = new Calendar('cal', 'frm1');
+cal.tfDate = 'CALDDATE';			// 날짜 입력 필드명
+
+var gb = Math.round(Math.random()*6);
+// gb - 0~6 : 핑크색, 오렌지색, 노란색, 연두색, 보라색, 녹색, 하늘색
+var dayColor = new Array("#F4D7F1", "#FAD9B7", "#E3E0CC", "#E2F3CD", "#EBD8FB", "#CAF2E7", "#D1EBF3");
+var dateColor = new Array("#FDF2FC", "#FBF3EA", "#FDF9E5", "#F5FEEA", "#F5EEFB", "#EFFCF5", "#E9F8FC");
+var focusColor = new Array("yellow", "white", "#DDDDDD", "#DDDDDD", "white", "#DDDDDD", "#DDDDDD");
+
+cal.bgcolor = dayColor[gb];			// 요일 바탕색
+cal.bgcolor2 = dateColor[gb];		// 내용 바탕색
+cal.linecolor = dayColor[gb];		// 요일 바탕 라인색
+cal.lineheight = '23px';			// 요일 바탕 높이
+cal.width = '180';					// 달력 너비
+cal.tfDateLineCol = 'black';		// 날짜 입력 필드 라인색
+cal.tfCol = dateColor[gb];			// 내용 필드 바탕색
+cal.focusCol = focusColor[gb];		// 포커드 필드 바탕색
+cal.show();
+</script>
+	</td>
+    <td width="64%" valign="top">
+      <p>===&gt; 보다 랜덤한 칼라의 달력을 원하신다면 아래와 같이 달력 색을 랜덤하게 지정할 수 있습니다.</p>
+      <p><font color="#0000FF">&lt;script&gt;<br>
+        // 달력 보여주기<br>
+        cal = new Calendar('cal', 'frm1');<br>
+        cal.tfDate = 'CALDDATE'; // 날짜 입력 필드명</font></p>
+      <p><font color="#0000FF">var gb = Math.round(Math.random()*6);<br>
+        // gb - 0~6 : 핑크색, 오렌지색, 노란색, 연두색, 보라색, 녹색, 하늘색<br>
+        var dayColor = new Array(&quot;#F4D7F1&quot;, &quot;#FAD9B7&quot;, &quot;#E3E0CC&quot;, 
+        &quot;#E2F3CD&quot;, &quot;#EBD8FB&quot;, &quot;#CAF2E7&quot;, &quot;#D1EBF3&quot;);<br>
+        var dateColor = new Array(&quot;#FDF2FC&quot;, &quot;#FBF3EA&quot;, &quot;#FDF9E5&quot;, 
+        &quot;#F5FEEA&quot;, &quot;#F5EEFB&quot;, &quot;#EFFCF5&quot;, &quot;#E9F8FC&quot;);<br>
+        var focusColor = new Array(&quot;yellow&quot;, &quot;white&quot;, &quot;#DDDDDD&quot;, 
+        &quot;#DDDDDD&quot;, &quot;white&quot;, &quot;#DDDDDD&quot;, &quot;#DDDDDD&quot;);</font></p>
+      <p><font color="#0000FF">cal.bgcolor = dayColor[gb]; // 요일 바탕색<br>
+        cal.bgcolor2 = dateColor[gb]; // 내용 바탕색<br>
+        cal.linecolor = dayColor[gb]; // 요일 바탕 라인색<br>
+        cal.lineheight = '23px'; // 요일 바탕 높이<br>
+        cal.width = '180'; // 달력 너비<br>
+        cal.tfDateLineCol = 'black'; // 날짜 입력 필드 라인색<br>
+        cal.tfCol = dateColor[gb]; // 내용 필드 바탕색<br>
+        cal.focusCol = focusColor[gb]; // 포커드 필드 바탕색<br>
+        cal.show();<br>
+        &lt;/script&gt;</font></p>
+    </td>
+  </tr>
+</table>
+</BODY>
+</HTML>

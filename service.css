@@ -1,0 +1,185 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+.container{
+	width: 100%;
+	top: 0px;
+    right: 0px;
+    left: 0px;   
+	background-color: #f3e5f5;
+	border: none;
+    height: 115px;
+}
+.container2{
+	width: 700px;
+	height: 470px;
+	float: left;
+	border: 1px solid #613F0A;
+	border-radius: 10px;
+	margin-right: 40px;
+	margin-left: 20px;
+}
+.container3{
+	width: 700px;
+	height: 470px;
+	float: left;
+	border: 1px solid #613F0A;
+	border-radius: 10px;
+}
+#title{/*웹 사이트 제목*/
+	text-align: center;
+	font-family: lato;
+	padding-top : 30px;
+	font-weight: bold;
+	color:#4e342e;
+}
+.checkBlock{/*반으로 가름 - 왼쪽 부분*/
+	width: 50%;
+	height: 44px;
+	float: left;
+	display:inline-block;
+}
+.choiceList{
+	padding-top: 20px;
+	padding-right: 250px;
+	float: right; 
+}
+.choiceList2{
+	padding-top: 20px;
+	padding-right: 210px;
+	float: right; 
+}
+.btn{
+ background-color:#fddfdf;
+}
+
+.custom_checkbox {
+	position:relative;
+	margin :50px 60px 60px 60px;
+}
+.custom_checkbox label {
+	font-family: 'Jeju Gothic', serif;
+	font-size: 17px;
+	position:absolute;
+	left:0;
+	height:40px;
+	padding: 1px 0 0 50px;
+	background:url('http://postfiles9.naver.net/MjAxNzA0MzBfODUg/MDAxNDkzNTQzNTU3NjY4.eCo6AasTfVGvcPdgrxfZfUIdmeV64TsSGc62QL3jlZIg.HIO90T5WLXyigWLKlDTGN9mKaGEvbdPlDXIYZBKI7lEg.PNG.wjdrhdms002/%EC%96%B8%EC%B2%B4%ED%81%AC4.PNG?type=w3') no-repeat;
+	background-size: 30px;
+}
+.custom_checkbox input[type="checkbox"]:checked + label {
+	background-position:0 -25px;
+	background:url('http://postfiles9.naver.net/MjAxNzA0MzBfNiAg/MDAxNDkzNTQ0ODczNjU4.pHpQ4hs3Ju9HHsT5lL6E48JU4egX2Km0brRIznxadF4g.mqOuNNOIz7xeyjOgLHSyYchVHfweC5NjNqkfxlSf8z4g.PNG.wjdrhdms002/%EC%B2%B4%ED%81%AC3.PNG?type=w3') no-repeat;
+	background-size: 30px;
+}
+.property{
+	position:relative;
+	margin :30px 40px 40px 40px;
+}
+.property_2{
+     border-left: 1px solid #5499C7;
+    padding-left: 40px;
+    height: 400px;
+}
+div#select_box {
+    position: relative;
+    padding-bottom:5px;
+    width: 175px;
+    height: 25px;
+    background: url('http://postfiles8.naver.net/MjAxNzA0MzBfMTcx/MDAxNDkzNTUyMDY4ODcx.OCiNfEZ_4T0WOh3fFTYQUDhehMBRuBuxOz89Lz6s1csg.AEaMk4Jfg9ODu7jJbnSBNHI7PnAsq2q3-ewSNttYofYg.PNG.wjdrhdms002/%EC%85%80%EB%A0%89%ED%8A%B8%EB%B0%95%EC%8A%A4.PNG?type=w3') 150px center no-repeat; /* 화살표 이미지 */
+    background-size:20px;
+    border: 1px solid #5499C7;
+}
+div#select_box label {
+    position: absolute;
+    font-family: 'Jeju Gothic', serif;
+    font-size: 12px;
+    color: #212F3C;
+    top: 8px;
+    left: 12px;
+    letter-spacing: 1px;
+}
+div#select_box2 {
+    position: relative;
+    padding-bottom:5px;
+    width: 175px;
+    height: 25px;
+    background: url('http://postfiles8.naver.net/MjAxNzA0MzBfMTcx/MDAxNDkzNTUyMDY4ODcx.OCiNfEZ_4T0WOh3fFTYQUDhehMBRuBuxOz89Lz6s1csg.AEaMk4Jfg9ODu7jJbnSBNHI7PnAsq2q3-ewSNttYofYg.PNG.wjdrhdms002/%EC%85%80%EB%A0%89%ED%8A%B8%EB%B0%95%EC%8A%A4.PNG?type=w3') 150px center no-repeat; /* 화살표 이미지 */
+    background-size:20px;
+    border: 1px solid #5499C7;
+}
+div#select_box2 label {
+    position: absolute;
+    font-family: 'Jeju Gothic', serif;
+    font-size: 12px;
+    color: #212F3C;
+    top: 8px;
+    left: 12px;
+    letter-spacing: 1px;
+}
+div#select_box select#obligFld {
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    opacity: 0;
+    filter: alpha(opacity=0); /* IE 8 */
+}
+div#select_box2 select#jmFld {
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    opacity: 0;
+    filter: alpha(opacity=0); /* IE 8 */
+}
+#two, #three,#four,#five,#six,#seven,#eight{
+	font-family: 'Jeju Gothic';
+    font-size: 17px;
+    padding-bottom:5px;
+}
+.property_1{
+	float:left;
+}
+.property_2{
+  float:right;
+}
+form {
+	float:right;
+    margin-top: 0em;
+}
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 15.3333px;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 13.3333px;
+    line-height: normal;
+    font-family: 'Jeju Gothic';
+}
+:link {TEXT-DECORATION: none}
+:visited {TEXT-DECORATION: none}
+:hover {TEXT-DECORATION: none}
+
+#txtDate{
+     float: left;
+    margin-right: 100px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Jeju Gothic';
+}

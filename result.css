@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+.container{
+	width: 100%;
+	top: 0px;
+    right: 0px;
+    left: 0px;   
+	background-color: #f3e5f5;
+	border: none;
+    height: 115px;
+}
+#title{/*웹 사이트 제목*/
+	text-align: center;
+	font-family: lato;
+	padding-top : 30px;
+	font-weight: bold;
+	color:#4e342e;
+}
+.container2{
+	padding-top: 50px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    padding-right: 60px;
+    margin-left: 180px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    border: 1px solid #613F0A;
+    border-radius: 10px;
+}
+.container2 h3{
+	font-family: 'Jeju Gothic', serif;
+	    font-weight: 100;
+
+}
+.information{
+	margin-right:550px;
+	margin-top: 20px;
+}
+#table1{
+	font-size: 17px;
+    text-align: center;
+    font-family: 'Jeju Gothic', serif;
+        
+}
+#table1 td{
+	border-bottom: 1px solid #4e342e;
+	text-align: center;
+	font-family: 'Jeju Gothic', serif;
+}
+#row1{
+	border-bottom: 1px solid #4e342e;
+	text-align: center;
+	font-family: 'Jeju Gothic', serif;
+}

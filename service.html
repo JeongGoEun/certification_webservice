@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-type" content="text/html charset=euc-kr">
+	<title>All of the License</title>
+	<link type="text/css" rel="stylesheet" href="service.css"/>
+	<link type="text/css" rel="stylesheet" href="jquery-ui.css"/>
+	<link type="text/css" rel="stylesheet" href="freelancer.css"/>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" ></script>
+	<script type="text/javascript" src="jquery.xdomainajax.js"></script>
+	<script src="calendar.js"></script>
+	<script type="text/javascript" src="xml2json.js"></script>
+	<script type="text/javascript" src="service.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<script type="text/javascript" src="jquery.blockUI.js"></script>
+	<script type="text/javascript" src="globalize.js"></script>
+	<script type="text/javascript" src="jquery-ui-i18n.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 id="title">All of the License</h1>
+		<p style="text-align: right; font-size: 12px;">화면 크기를 90%로 맞춰주세요 ! !</p>
+	</div>
+	<div class="new" style="height: 100px;">
+		<div class="checkBlock">		 
+			<i class="large material-icons" style="font-size: 50px; padding-top: 30px; padding-left: 150px;">list</i> 
+			<h2 class="choiceList2">Choose What You Want!</h2>
+		</div>
+		<div class="checkBlock">
+			<i class="large material-icons" style="font-size: 50px; padding-top: 30px; padding-left: 230px;">search</i> 
+			<h2 class="choiceList">Select Details!</h2>
+		</div>
+	</div>
+
+	<div class="Lists" style="height: 500px;">
+		<div class="container2">
+			<div class="custom_checkbox">
+		        <h2 style="text-align: center; padding-bottom: 50px; font-family: 'Jeju Gothic'">원하는 정보를 선택하세요!</h2>
+   			    <input type="checkbox" id="custom1" name="normal" onClick="one(this)";>
+   	   		 	<label for="custom1">자격증 종목</label>
+   		    	<hr>
+    	    	<input type="checkbox" id="custom2" name="normal" onClick="two(this)">
+        		<label for="custom2">자격 종목</label>
+        		<hr>
+   		    	<input type="checkbox" id="custom4" name="normal" onClick="four(this)">
+   	   		 	<label for="custom4">응시 수수료 조회</label>
+   		    	<hr>
+   		    	<input type="checkbox" id="custom5" name="normal" onClick="five(this)">
+   	   		 	<label for="custom5">출제 경향</label>
+   		    	<hr>
+   		    	<input type="checkbox" id="custom6" name="normal" onClick="six(this)">
+   	   		 	<label for="custom6">취득 방법</label>
+   		    	<hr>
+   		    	<input type="checkbox" id="custom8" name="normal" onClick="eight(this)">
+   	   		 	<label for="custom8">시험 일정</label>
+   		    	<hr>
+        	</div>
+        </div>
+
+		<div class="container3">
+			<div class="property">
+				<h2 style="text-align: center; padding-bottom: 30px; padding-top: 20px; font-family: 'Jeju Gothic'">세부 사항을 선택하세요!</h2>
+				
+				<div style="margin-left:200px;">	
+					<div class="property_1">
+				<div id="select_box">
+				   <label for="color">대직무 분야</label>
+ 				   <select id="obligFld" title="select color" onChange="getValue()">
+				    </select>
+				</div>	
+				<div id="select_box2" style="margin-top:10px;">
+				   <label for="color">자격증 이름</label>
+ 				   <select id="jmFld" title="select color" onChange="getName()">
+				    </select>
+				</div>
+					<h3 id="two">자격 종목을 검색합니다.</h3>
+					<h3 id="four">응시 수수료를 조회합니다.</h3>
+					<h3 id="five">관련 된 학과를 검색합니다.</h3>
+					<h3 id="six">취득 방법을 검색합니다.</h3>
+					<h3 id="seven">출제 경향을 검색합니다.</h3>
+					<h3 id="eight">시험 일정을 검색합니다.</h3>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="height:70px; margin-bottom:70px; margin-top:20px;">
+	<center><button id="button" style="width:200px; border: solid 5px;    border: solid 3px;
+    border-color: darkgrey;" class="ui-button ui-corner-all ui-widget" class="btn" onClick="moveHtml()">Search!</button></center>
+	<div>
+	
+</body>
+</html>

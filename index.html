@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="intro-image">
+            <img src="http://www.232spb.ru/userfiles/image/grey_new_seo-33-512%5B1%5D.png" style="float:left;width: 400px;    margin-left: 150px;margin-top:100px;"></img>
+        </div>
+        <div class="text-vertical-center">
+            <h1>자격증의 모든것</h1>
+            <h3>원하는 자격증을 검색하세요!</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"">튜토리얼 보기</a>
+            <a href="service.html" class="btn btn-dark btn-lg">자격증 찾기</a>
+        </div>
+    </header>
+
+    <!-- 모달 창 -->
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="firstStep">
+            </br>
+            <center><h4>● Step1 : 원하는 항목을 고릅니다(중복 가능)</h4></center>
+            <img src="img/1.png"/ style="float:left; width:300px; margin-right:20px; margin-left:20px;">
+            <ul style="margin-top:70px;margin-bottom:50px;">
+                <p>자격증 종목 : 원하는 자격증을 고를 수 있습니다.</p>
+                <p>자격 종목 : 해당 자격증의 자격을 검색합니다.</p>
+                <p>응시 수수료 조회 : 해당 자격증 시험의 수수료를 검색합니다.</p>
+                <p>관련 학과 : 해당 자격증의 학과를 검색합니다.</p>
+                <p>취득 방법 : 해당 자격증의 취득 방법을 검색합니다.</p>
+                <p>시험 일정 : 해당 자격증의 시험 일정을 검색합니다.</p>
+            </ul>
+            </br>
+
+            <center><h4>● Step2 : 세부 사항을 고릅니다(중복 가능)</h4></center>
+            <img src="img/2.png" style="float:left; width:300px; margin-right:20px; margin-left:20px;">
+           <ul style="margin-top:70px;margin-bottom:50px;">
+                <p>자격증 종목 선택 -> 대직무분야로 자격증을 고른 후, 자신이 원하는 자격증을 선택 할 수 있습니다.</p>
+                <p>자격 종목 선택 -> 해당 자격증의 자격 종목 검색 유무를 확인할 수 있습니다.</p>
+                <p>응시 수수료 조회 선택 -> 해당 자격증의 시험 수수료를 검색 유무를 확인 할 수 있습니다.</p>
+                <p>관련 학과 선택 -> 해당 자격증의 관련 학과 검색 유무를 확인 할 수 있습니다.</p>
+                <p>취득 방법 선택 -> 해당 자격증의 취득 방법 검색 유무를 확인 할 수 있습니다.</p>
+            </ul>
+            </br>
+            </br>
+            <center><h4>● Step3 : search버튼을 누르고 원하는 정보를 얻습니다!</h4></center>
+            </br></br></br></br></br><center><p>튜토리얼이 끝났습니다. 아무곳이나 클릭하세요</p></center></br>
+        </div>
+    </div>
+  </div>
+</div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
+
+</body>
+
+</html>
